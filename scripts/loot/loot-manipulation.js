@@ -66,6 +66,7 @@ export class LootManipulator
         itemData.name = itemData.name.replace(/(Cantrip\sLevel)/, "Cantrip");
         itemData.name += ` (${itemEntity.data.name})`
 
+        const scroll = await Item5e.createScrollFromSpell(itemEntity);
         itemData = scroll.data;
 	    itemData.data.save.scaling = "flat";
         itemData.data.save.dc = 12 + parseInt(level);

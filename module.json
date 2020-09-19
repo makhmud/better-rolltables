@@ -2,7 +2,7 @@
   "name": "makhmud-better-rolltables",
   "title": "Better Roll Tables (Fork)",
   "description": "Adding functionality to roll tables, especially to roll treasure and magic items. Fork fixes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "makhmud",
   "esmodules": [
     "./scripts/brt-main.js"
