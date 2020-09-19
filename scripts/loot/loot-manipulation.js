@@ -1,4 +1,5 @@
 import { BRTCONFIG } from '../core/config.js';
+import Item5e from '../../../../systems/dnd5e/module/item/entity.js';
 
 export class LootManipulator
 {
