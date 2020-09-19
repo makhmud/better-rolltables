@@ -65,6 +65,11 @@ export class LootManipulator
         itemData.name = itemData.name.replace(/^(Spell\s)/, "");
         itemData.name = itemData.name.replace(/(Cantrip\sLevel)/, "Cantrip");
         itemData.name += ` (${itemEntity.data.name})`
+
+        itemData = scroll.data;
+	    itemData.data.save.scaling = "flat";
+        itemData.data.save.dc = 12 + parseInt(level);
+        
         return itemData;
     }
 }
